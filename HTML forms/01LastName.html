@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>02 Form</title>
+	</head>
+	<body>
+		<form name="Ex02" method="post">
+			<table border="1px">
+			
+			<colgroup>
+				<col width="160px"></col>
+				<col width="260px"></col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<td style="text-align:right"><strong>Last Name</strong></td>
+					<td><input type="text" name="lastName" autofocus="autofocus"/></td>
+				</tr>
+				<tr>
+					<td style="text-align:right"><strong>First Name</strong></td>
+					<td><input type="text" name="firstName"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right"><strong>Adress</strong></td>
+					<td><textarea name="adress" cols="15" ></textarea></td>
+				</tr>
+				<tr>
+					<td style="text-align:right"><strong>City</strong></td>
+					<td><input type="text"style="width: 90px" name="city"/>
+					
+						<strong style="text-align:right">State</strong>
+						<input type="text" style="width: 40px"name="state"/>
+						</td>
+				</tr>
+				<tr>
+					<td style="text-align:right"><strong>ZIP/Postal Code</strong></td>
+					<td><input type="text"style="width: 60px" name="zipCode"/></td>
+				</tr>
+				<tr>
+					<td style="text-align:right"><strong>Country</strong></td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+					<strong>Phone(country code, 
+					<br> area code, number)</strong>
+					</td>
+					<td>
+						(+<input type="text" style="width: 40px"/>)
+						<input type="text" style="width: 40px"/>
+						-<input type="text" style="width: 80px"
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+					<strong>E-mail</strong>
+					</td>
+					<td>
+					<input type="text"style="width: 210px" name="email"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+					<strong>Birth date</strong>
+					</td>
+					<td name="birthDate">
+					Month<input type="text"style="width: 20px" name="month"/>
+					 Day<input type="text"style="width: 20px" name="day"/>
+					 Year(4 digit)<input type="text"style="width: 40px" name="year"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+					<strong>Gender</strong>
+					</td>
+					<td>
+					<select name="gender">
+					<option value="Value 1"
+					selected="selected">Male</option>
+					<option value="Value 2">Female</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+				<td style="text-align:right">
+					<strong>Starting date</strong>
+				</td>
+				<td>
+					<input type="radio" name="semester"value="spring"/>
+					Spring 2006
+					<input type="radio" name="semester"value= "summer"/>
+					Summer 2006
+				</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Comments/Questions</strong>
+					</td>
+					<td>
+						<textarea name="comments" cols="15" rows="4" ></textarea>
+					</td>
+				</tr>
+				<tfoot>
+				<tr style="background-color:blue;text-align:center">
+					<td colspan="2">
+						<button type="submit" >
+							Submit
+						</button>
+						<button type="reset" >
+							Clear this form
+						</button>
+					</td>
+				</tr>
+				</tfoot>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
